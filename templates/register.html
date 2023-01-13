@@ -1,0 +1,33 @@
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Register </title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">			
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center">
+		<div align="center" class="border">
+			<div class="header">
+				<h1 class="word">Naresh it technologies</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('register') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="First Name " name="First Name " type="text" placeholder="Enter Your First Name " class="textbox"/></br></br>
+					<input id=" Last Name" name=" Last Name" type="text" placeholder="Enter Your  Last Name" class="textbox"/></br><br>
+					<input id="First Name " name="First Name " type="text" placeholder="Enter Your Father's Name " class="textbox"/></br></br>
+					<input id="First Name " name="First Name " type="numbers" placeholder="Enter Your Date of birth " class="textbox"/></br></br>
+					<input id="Father's Name" name="Father's Name" type="text" placeholder="Gender" class="textbox"> </input></br></br>
+					<input id="First Name " name="First Name " type="text" placeholder="Enter Your Educationa Qualifications " class="textbox"/></br></br>
+					<input id="First Name " name="First Name " type="text" placeholder="Enter Your Course " class="textbox"/></br></br>
+					<input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+					<input type="submit" class="btn" value="Sign Up"></br>
+				</form>
+			</h2>
+			<p class="bottom">Already have an account? <a class="bottom" href="{{url_for('login')}}"> Sign In here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
